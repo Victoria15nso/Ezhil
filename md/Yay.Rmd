@@ -1,0 +1,24 @@
+---
+title: "MD"
+author: "Ershov Timofey"
+date: '15 октября 2019 г '
+output: html_document
+---
+
+There are a few essential RStudio addins to make it easy to edit and preview your website, and you can find them in the menu “Addins” on the RStudio toolbar:
+
+“Serve Site”: This addin calls blogdown::serve_site() to continuously serve your website locally using the LiveReload technology, so you can live preview the website. You can continue to edit material for your site while you are previewing it.
+
+“New Post”: This addin provides a dialog box for you to enter the metadata of your blog post, including the title, author, date, and so on. See Figure 1.2 for an example. This addin actually calls the function blogdown::new_post() under the hood, but does a few things automatically:
+
+As you type the title of the post, it will generate a filename for you, and you can edit it if you do not like the automatically generated one. In fact, you can also use this addin to create normal pages under any directories under content/. For example, if you want to add a resume page, you can change the filename to resume.md from the default post/YYYY-mm-dd-resume.md.
+
+You can select the date from a calendar widget provided by Shiny.10
+
+It will scan the categories and tags of existing posts, so when you want to input categories or tags, you can select them from the dropdown menus, or create new ones.
+
+After a new post is created, it will be automatically opened, so you can start writing the content immediately.
+
+“Update Metadata”: This addin allows you to update the YAML metadata of the currently opened post. See Figure 1.3 for an example. The main advantage of this addin is that you can select categories and tags from dropdown menus instead of having to remember them.
+
+“Insert Image”: This addin allows you to insert any image in your computer to your currently opened post.11 Figure 1.4 shows how the addin looks like. This addin copies the image to the final location for your post files, and adds the Markdown/HTML code to embed the image. You can specify the width and height of the image, as well as the alternative text. The addin will show the final image file path after the image is uploaded. You can edit the path if necessary. If the image already exists, the addin will ask you whether you want to overwrite it as in Figure 1.5: when in doubt, change the name in the “Target file path” text input to avoid a conflict with previous images you have inserted.
